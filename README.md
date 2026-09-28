@@ -2,6 +2,8 @@
 
 A 15-second, looping motion-design showreel that runs as a native Android app. Every frame is drawn live in Kotlin on a Jetpack Compose `Canvas`, with two AGSL shaders on the GPU. There's no video file, no Lottie, no web view, and no keyframes: the whole reel is a pure function of time.
 
+Designed and built with **Claude Opus 5.5** in [Claude Code](https://claude.com/claude-code).
+
 [![Frames from the reel](docs/frames.png)](https://github.com/c5inco/motion-showreel/releases/download/v1.0/showreel.mp4)
 
 **▶ [Watch the reel (MP4, 15 s, 60 fps)](https://github.com/c5inco/motion-showreel/releases/download/v1.0/showreel.mp4)**: a capture from the Android emulator, attached to the [v1.0 release](https://github.com/c5inco/motion-showreel/releases/tag/v1.0).
@@ -69,6 +71,10 @@ All three fonts are licensed under the [SIL Open Font License 1.1](https://openf
 - [Inter Tight](https://fonts.google.com/specimen/Inter+Tight) (ExtraBold): kinetic caps
 - [Instrument Serif](https://fonts.google.com/specimen/Instrument+Serif) (Regular and Italic): accents and the title
 - [Geist Mono](https://fonts.google.com/specimen/Geist+Mono) (Regular and SemiBold): HUD and captions
+
+## Made with Claude Opus 5.5
+
+Claude Opus 5.5, working in Claude Code, did the concept, choreography, typography, AGSL shaders and Kotlin for this reel. It also verified the work on the Android emulator: it froze frames at chosen timestamps to review them, profiled the frame rate, and captured the recording.
 
 ## License
 
