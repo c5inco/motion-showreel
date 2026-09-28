@@ -8,6 +8,8 @@ Designed and built with **Claude Opus 5.5** in [Claude Code](https://claude.com/
 
 **▶ [Watch the reel (MP4, 15 s, 60 fps)](https://github.com/c5inco/motion-showreel/releases/download/v1.0/showreel.mp4)**: a capture from the Android emulator, attached to the [v1.0 release](https://github.com/c5inco/motion-showreel/releases/tag/v1.0).
 
+**⬇ [Download the APK](https://github.com/c5inco/motion-showreel/releases/download/v1.0/motion-showreel-v1.0.apk)** (1.6 MB, Android 13+) to run the reel on your own device.
+
 ## The reel
 
 | Time | Section | What happens |
@@ -46,12 +48,22 @@ app/src/main/java/com/example/showreel/
 
 The app needs Android 13 (API 33) or later for `RuntimeShader`.
 
+**Prebuilt:** install the signed release APK from the [v1.0 release](https://github.com/c5inco/motion-showreel/releases/tag/v1.0):
+
+```sh
+adb install motion-showreel-v1.0.apk
+```
+
+**From source:**
+
 ```sh
 ./gradlew :app:installDebug
 adb shell am start -n com.showreel.reel/com.example.showreel.MainActivity
 ```
 
 Tap anywhere to restart the reel.
+
+`./gradlew :app:assembleRelease` builds a minified (R8) release APK. It's signed only if a `keystore.properties` file is present in the project root (`storeFile`, `storePassword`, `keyAlias`, `keyPassword`); otherwise it's left unsigned. That file is gitignored.
 
 **On an emulator**, use host GPU rendering (`hw.gpu.mode=host` in the AVD's `config.ini`, or `-gpu host`). Headless emulators with `gpu.mode=auto` fall back to software rendering, which drops the frame rate from 60 fps to about 20–35.
 

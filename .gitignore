@@ -16,3 +16,8 @@ local.properties
 
 # Screen recordings are published as release assets, not committed
 /recordings
+
+# Release signing secrets
+keystore.properties
+*.jks
+*.keystore
