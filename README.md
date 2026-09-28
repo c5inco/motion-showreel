@@ -2,11 +2,9 @@
 
 A 15-second, looping motion-design showreel that runs as a native Android app. Every frame is drawn live in Kotlin on a Jetpack Compose `Canvas`, with two AGSL shaders on the GPU. There's no video file, no Lottie, no web view, and no keyframes: the whole reel is a pure function of time.
 
-![Frames from the reel](docs/frames.png)
+[![Frames from the reel](docs/frames.png)](https://github.com/c5inco/motion-showreel/releases/download/v1.0/showreel.mp4)
 
-<video src="https://github.com/c5inco/motion-showreel/releases/download/v1.0/showreel.mp4" controls muted loop playsinline width="360"></video>
-
-A 60 fps capture from the Android emulator. [Download the MP4](https://github.com/c5inco/motion-showreel/releases/download/v1.0/showreel.mp4) if the player doesn't load.
+**▶ [Watch the reel (MP4, 15 s, 60 fps)](https://github.com/c5inco/motion-showreel/releases/download/v1.0/showreel.mp4)**: a capture from the Android emulator, attached to the [v1.0 release](https://github.com/c5inco/motion-showreel/releases/tag/v1.0).
 
 ## The reel
 
